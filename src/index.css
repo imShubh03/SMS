@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    @apply text-gray-900;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-300 focus:ring-offset-2;
+  }
+  
+  .btn-outline {
+    @apply border border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-2 focus:ring-gray-300 focus:ring-offset-2;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden;
+  }
+  
+  .input {
+    @apply w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-300 focus:border-blue-400 outline-none transition-all duration-200;
+  }
+  
+  .avatar {
+    @apply flex items-center justify-center rounded-full text-blue-800 font-semibold;
+  }
+  
+  .avatar-sm {
+    @apply w-10 h-10 text-sm;
+  }
+  
+  .avatar-md {
+    @apply w-12 h-12 text-base;
+  }
+  
+  .avatar-lg {
+    @apply w-20 h-20 text-2xl;
+  }
+}
+
+.loading-pulse {
+  @apply animate-pulse bg-gray-200 rounded;
+}
+
